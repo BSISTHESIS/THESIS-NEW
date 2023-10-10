@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dash_imagee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ORDERSTATUS.OrderStatus">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/logos" />
+
+        <LinearLayout
+            android:layout_below="@id/imageView"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <Button
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:id="@+id/button"
+        android:layout_width="133dp"
+        android:layout_height="150dp"
+        android:background="@drawable/background_card_view3"
+        android:fontFamily="@font/coffe_font"
+        android:text="DINE IN"
+        android:textSize="20sp" />
+
+    <Button
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:id="@+id/button2"
+        android:layout_width="131dp"
+        android:layout_height="150dp"
+        android:background="@drawable/background_card_view3"
+        android:fontFamily="@font/coffe_font"
+        android:text="TAKE OUT "
+        android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

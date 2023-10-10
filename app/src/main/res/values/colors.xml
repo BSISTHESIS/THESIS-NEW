@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A2693D</color>
+    <color name="colorPrimaryDark">#C09879</color>
+    <color name="colorAccent">#FFAB00</color>
+
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name = "colorGreen">#247b37</color>
+    <color name="colorLightAccent">#F8845F</color>
+    <color name="black_overlay">#050505</color>
+    <color name ="dashcolor">#E1EFE3</color>
+
+    <color name="colorPrimaryDark2">#F4CCAD</color>
+
+    <color name="teal_200">#A2693D</color>
+    <color name="teal_700">#FF018786</color>
+</resources>
