@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="10dp"
+    app:cardBackgroundColor="@color/colorPrimaryDark"
+    android:id="@+id/card_view_next_fragment"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="150dp"
+            android:src="@drawable/logos"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/coffe_font"
+            android:textColor="@color/white"
+            android:id="@+id/text_name"
+            android:layout_toEndOf="@id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT NAME:"/>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/coffe_font"
+            android:textColor="@color/white"
+            android:id="@+id/product_price"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/text_name"
+            android:layout_toEndOf="@id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT PRICE:"/>
+
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/coffe_font"
+            android:textColor="@color/white"
+            android:id="@+id/product_status"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/product_price"
+            android:layout_toEndOf="@id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT STATUS:"/>
+
+
+        <Button
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/coffe_font"
+            android:id="@+id/btn_edit_status"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/product_status"
+            android:layout_toEndOf="@id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE \n STATUS"/>
+
+        <Button
+            android:fontFamily="@font/coffe_font"
+            android:id="@+id/btn_delete"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/product_status"
+            android:layout_toEndOf="@id/btn_edit_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE \n ITEM"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <!-- This will be the parent Floating Action Button -->
+    <!-- After the implementation the Floating Action Button
+         at the bottom right corner -->
+    <!-- After clicking the above button the following two buttons
+         will pop up. So this button is considered as parent FAB -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TabLayout.Dashboard">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/dash_image" />
+
+
+                <TextView
+
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_banner"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/bitcheese"
+                    android:text="Mamam Coffee House"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="20sp" />
+
+                <TextView
+
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bitcheese"
+                    android:text="Dafer Building, Sto Cristo, Guagua"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address"
+                    android:background="@drawable/border_new"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    app:tabSelectedTextColor="@color/black_overlay"
+                    app:tabTextAppearance="@style/TablayoutTextStyle"
+                    app:tabTextColor="@color/black_overlay" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_below="@id/tablayout"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/red_btn_bg_color"
+        android:src="@drawable/baseline_shopping_cart_24"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/count_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-30dp"
+        android:background="@drawable/circle"
+        android:elevation="7dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/red_btn_bg_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/add_fab"
+        app:layout_constraintEnd_toEndOf="@id/add_fab"
+        app:layout_constraintTop_toTopOf="@+id/add_fab"
+        app:layout_constraintVertical_bias="0.0" />
+    <!-- Floating action button for add alarm -->
+    <!-- Make sure that you are constraining this
+         button to the parent button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

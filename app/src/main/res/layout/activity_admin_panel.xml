@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/dash_imagee"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/logos" />
+
+
+
+        <TextView
+            android:background="@drawable/background_card_view3"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/coffe_font"
+            android:textAlignment="center"
+            android:text="UPDATE DRINKS AND MEALS AND OTHERS"
+            android:layout_below="@id/imageView"
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/logos" />
+        <LinearLayout
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:id="@+id/dash1"
+            android:layout_below="@id/textview"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_card_view2"
+                android:fontFamily="@font/coffe_font"
+                android:text="POPULAR MEALS"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/button2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/background_card_view2"
+                android:fontFamily="@font/coffe_font"
+                android:text="COFFEE"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:id="@+id/dash2"
+            android:layout_below="@id/dash1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_non_coffee"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/background_card_view3"
+                android:fontFamily="@font/coffe_font"
+                android:text="NON COFFEE"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_waffle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_card_view2"
+                android:fontFamily="@font/coffe_font"
+                android:text="WAFFLE"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:id="@+id/asd2"
+            android:layout_below="@id/dash2"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_fries"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/background_card_view2"
+                android:fontFamily="@font/coffe_font"
+                android:text="FRIES"
+                android:textSize="20sp" />
+
+            <Button
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_drinks"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/background_card_view2"
+                android:fontFamily="@font/coffe_font"
+                android:text="DRINKS"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:gravity="center"
+            android:id="@+id/asd"
+            android:layout_below="@id/asd2"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_image_slider"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/background_card_view2"
+                android:fontFamily="@font/coffe_font"
+                android:text="IMAGE SLIDER"
+                android:textSize="20sp" />
+            <Button
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_cashier"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/background_card_view2"
+                android:fontFamily="@font/coffe_font"
+                android:text="CASHIER"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:gravity="center"
+            android:id="@+id/asd3"
+            android:layout_below="@id/asd"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_sales"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/background_card_view2"
+                android:fontFamily="@font/coffe_font"
+                android:text="SALES PRINT"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
